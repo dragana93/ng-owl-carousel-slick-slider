@@ -1,15 +1,16 @@
-<div>
-  <owl-carousel [options]="carouselOptions"
-                [items]="images"
-                [carouselClasses]="['owl-theme', 'row', 'sliding']">
-    <div class="item"
-         *ngFor="let image of images;let i=index">
-      <img class="slide-image"
-           src="{{image.image}}">
-      <div class="slide-text">
-        <h4>{{image.text}}</h4>
-      </div>
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1 font-weight-bold">{{title}}</span>
+</nav>
+<owl-carousel [options]="carouselOptions"
+              [items]="images"
+              [carouselClasses]="['owl-theme', 'row', 'sliding']">
+  <div class="item"
+       *ngFor="let image of images;let i=index">
+    <img class="slide-image"
+         src="{{image.image}}">
+    <div class="slide-text">
+      <h4>{{image.text}}</h4>
     </div>
-  </owl-carousel>
-</div>
+  </div>
+</owl-carousel>
 <router-outlet></router-outlet>
