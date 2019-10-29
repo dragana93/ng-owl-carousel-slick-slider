@@ -1,0 +1,49 @@
+::ng-deep {
+  .owl-carousel {
+    width: 90% !important;
+    margin: 10% auto;
+  }
+
+  .owl-carousel .owl-nav {
+    overflow: hidden;
+    height: 0px;
+  }
+
+  .owl-carousel .nav-btn {
+    height: 87px;
+    position: absolute;
+    width: 46px;
+    cursor: pointer;
+    top: 35% !important;
+  }
+
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+  }
+
+  .owl-carousel .prev-slide {
+    // background: url("src/assets/images/nav-icon.png") no-repeat scroll 0 0;
+    // size: 10rem !important;
+    left: -40px;
+  }
+
+  .owl-carousel .next-slide {
+    // background: url("src/assets/images/nav-icon.png") no-repeat scroll -24px 0px;
+    // size: 10rem !important;
+    right: -40px;
+  }
+
+  .owl-carousel .prev-slide:hover {
+    background-position: 0px -53px;
+  }
+
+  .owl-carousel .next-slide:hover {
+    background-position: -24px -53px;
+  }
+
+  .back-color {
+    background-color: #eee;
+  }
+}
